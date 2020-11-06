@@ -1,0 +1,96 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    background-color: #002C5F;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.nav {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 25px;
+}
+.nav-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+.nav-item-link {
+    color: white;
+}
+.car-box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border: 1px #002C5F solid;
+    border-radius: 5px;
+    max-width: 800px;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 1px 1px 10px;
+}
+.car-title {
+    text-align: center;
+    flex-basis: 50%;
+    font-size: 42px;
+    color: #002C5F;
+}
+.car-img {
+    width: 50%;
+}
+.car-text {
+    line-height: 26px;
+}
+.car-price b{
+    font-size: 22px;
+}
+.car-price strong{
+    font-size: 24px;
+}
+.footer {
+    height: 30px;
+    background-color: #002C5F;
+    color: white;
+    padding: 5px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer p {
+    margin: 0;
+}
+.installment-title {
+    text-align: center;
+}
+.installment-subtitle {
+    text-align: center;
+}
+.installment-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+.installment-car-img {
+    max-width: 371px;
+}
+.installment-car-title {
+    font-size: 38px;
+    margin-left: 60px;
+}
+.installment-car-title a {
+    color: #002C5F;
+}
+.installment-car-title a:hover {
+    color: red;
+}
+.about-content {
+    padding: 10px 30px;
+}
