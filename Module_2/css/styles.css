@@ -6,10 +6,44 @@
 }
 .module {
     width: 300px;
+    transform: translateY(-100vh);
+    position: relative;
 }
 .one {
     background-color: purple;
 }
 .two {
     background-color: yellow;
+}
+.drop {
+    animation: drop 1s ease forwards;
+}
+.drop:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation: bottom-glow 1s 0.9s forwards;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0vh);    
+    }
+}
+@keyframes bottom-glow {
+    0% {
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    70% {
+        box-shadow: 0px 0px 10px 10px white;  
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px white;  
+    }
+
 }
