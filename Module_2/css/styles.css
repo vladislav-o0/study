@@ -1,0 +1,15 @@
+.container {
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.module {
+    width: 300px;
+}
+.one {
+    background-color: purple;
+}
+.two {
+    background-color: yellow;
+}
