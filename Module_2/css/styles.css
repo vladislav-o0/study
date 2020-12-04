@@ -38,6 +38,18 @@ img {
     animation: bottom-glow 1s 0.9s forwards;
 }
 
+.task-list {
+    display: none;
+    opacity: 0;
+    font-size: 42px;
+    transition: opacity 300ms;
+}
+.task-item {
+    padding: 15px;
+    font-family: 'Russo One', sans-serif;
+    color: #1e1e1e;
+}
+
 @keyframes drop {
     0% {
         transform: translateY(-100vh);

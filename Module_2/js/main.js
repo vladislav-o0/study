@@ -23,12 +23,14 @@ function drop() {
 
 }
 
+let oldTaskList;
 
 container.addEventListener('click', function clickContainer(e) {
   
         let target = e.target;
         let module, images_arr = [];
         let active_module = document.querySelector('.active_module');
+        let taskList;
 
         container.removeEventListener('click', clickContainer);
     
@@ -47,6 +49,12 @@ container.addEventListener('click', function clickContainer(e) {
             container.addEventListener('click', clickContainer);
             return;
         }
+
+        if (oldTaskList) {
+            oldTaskList.style.display = '';
+            oldTaskList.style.opacity = '';
+        }
+        taskList = module.querySelector('.task-list');
     
         if (active_module) {
     
@@ -62,15 +70,24 @@ container.addEventListener('click', function clickContainer(e) {
                         imgs[i].style.transform = "translateY(0px)";
                     }, 500);
                 }
+
+                taskList.style.display = 'block';
+                setTimeout(() => taskList.style.opacity = '1', 100);
+                oldTaskList = taskList;
+
                 setTimeout(() => container.addEventListener('click', clickContainer), 1000);
                 active_module.removeEventListener('transitionend', showImgs);
             });
     
             active_module.style.width = '';
-            console.log('puff')
     
         } else {
-            setTimeout(() => container.addEventListener('click', clickContainer), 1500);
+            setTimeout(() => {
+                container.addEventListener('click', clickContainer);
+                taskList.style.display = 'block';
+                setTimeout(() => taskList.style.opacity = '1', 100);
+                oldTaskList = taskList;
+            }, 1500);
         }
     
         module.classList.add('active_module');
