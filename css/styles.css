@@ -47,6 +47,10 @@ img {
 .task-item {
     padding: 15px;
     font-family: 'Russo One', sans-serif;
+}
+
+.task-link {
+    text-decoration: none;
     color: #1e1e1e;
 }
 
