@@ -80,6 +80,7 @@ container.addEventListener('click', function clickContainer(e) {
             });
     
             active_module.style.width = '';
+            active_module.style.cursor = '';
     
         } else {
             setTimeout(() => {
@@ -103,6 +104,7 @@ container.addEventListener('click', function clickContainer(e) {
         }
     
         module.style.width = '100%';
+        module.style.cursor = 'auto';
     
         function findImages(module, img_arr) {
             for (let i = 0; i < module.children.length; i++) {
