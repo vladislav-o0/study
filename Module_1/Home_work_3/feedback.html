@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="feedback-bg">
+    <div class="header">
+        <img src="./img/hyundai-logo.webp" alt="Hyundai логотип">
+        <ul class="nav">
+            <li class="nav-item"><a href="./index.html" class="nav-item-link">Главная</a></li>
+            <li class="nav-item"><a href="./installment.html" class="nav-item-link">Беспроцентная рассрочка</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-item-link">О нас</a></li>
+            <li class="nav-item"><a href="./feedback.html" class="nav-item-link">Обратная связь</a></li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="./auth.html" class="nav-item-link">Войти</a></li>
+            <li class="nav-item"><a href="./reg.html" class="nav-item-link">Регистрация</a></li>
+        </ul>
+    </div>
+    <form action="" class="feedback-form form">
+        <fieldset>
+            <legend>Ваши данные:</legend>
+            <input placeholder="Имя" required type="text">
+            <input placeholder="Фамилия" required type="text">
+            <input placeholder="Отчество" type="text">
+            <input type="date">
+            <input placeholder="Email" required type="email">
+            <input type="url" placeholder="Ваш сайт">
+        </fieldset>
+        <fieldset>
+            <legend>Выберите свой автомобиль:</legend>
+            <label><input  type="radio" name="car">Creta</label>
+            <label><input  type="radio" name="car">Solaris</label>
+            <label><input  type="radio" name="car">SantaFe</label>
+            <label><input type="color" id=""> Выберите цвет авто</label>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите дополнительные функции:</legend>
+            <label><input type="checkbox" name="target">Подогрев сидений</label>
+            <label><input type="checkbox" name="target">Система автопарковки</label>
+            <label><input type="checkbox" name="target">Подогрев щеток стеклоочистителя</label>
+        </fieldset>
+        <label>
+            Выберите характер вопроса:
+            <select>
+                <option value="">Благодарность</option>
+                <option value="">Жалоба</option>
+                <option value="" selected>Другой вопрос</option>
+            </select>
+        </label>
+            <textarea class="feedback-textarea"></textarea>
+            <input type="file" class="feedback-file">
+            <input type="reset" value="Сбросить">
+            <input type="submit" value="Отправить">
+        </form>
+    <div class="footer">
+        <p class="copyright">Copyright©</p>
+    </div>
+</body>
+</html>
