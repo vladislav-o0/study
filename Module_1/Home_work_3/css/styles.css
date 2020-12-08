@@ -157,6 +157,10 @@ fieldset {
 }
 .news-link {
     align-self: flex-end;
+    padding: 5px;
+    border: 1px solids;
+    background-color: #002C5F;
+    color: white;
 }
 .news-img {
     width: 100%;
