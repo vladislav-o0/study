@@ -132,3 +132,32 @@ fieldset {
 .feedback-file {
     margin-bottom: 25px;
 }
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+.news {
+    border: 1px solid #002C5F;
+    width: 400px;
+    margin-bottom: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 1px 1px 10px;
+}
+.news-author-date {
+    align-self: flex-end;
+}
+.news-author-date span {
+    color: rgb(0, 211, 0);
+}
+.news-link {
+    align-self: flex-end;
+}
+.news-img {
+    width: 100%;
+}
