@@ -1,0 +1,36 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+img {
+    height: 33.33vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.row:nth-child(2)  img {
+    height: 100vh;
+}
+.text-box {
+    height: 33.33vh;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.big-img {
+    height: 100vh;
+}
+.title-box {
+    position: relative;
+}
+.title {
+    
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 42px;
+}
