@@ -1,0 +1,130 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #d4c39f;;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+li {
+    border: 1px solid;
+    padding: 10px 10px;
+    background-color:#fcfadc;
+}
+li:hover {
+    background-color: #c7b691;
+}
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 15px 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url('../img/img.jpg') center center no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 17px 1px;
+}
+.submenu {
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.submenu {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    padding-top: 38px;
+}
+
+.menu-item:nth-child(3) {
+    position: relative;
+    cursor: pointer;
+}
+.menu-item:nth-child(3):hover .submenu {
+    display: block;
+}
+.modal {
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid;
+    background-color: gray;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: url('../img/key.png') 65% center no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 17px 1px;
+}
+.modal:target {
+    display: block;
+}
+.modal form {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal input[type="text"] {
+    margin-bottom: 106px;
+}
+.modal input[type="submit"] {
+    background-color:#98b4dc;
+    outline: none;
+    width: 90px;
+    height: 33px;
+}
+.modal a {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    transform: rotate(45deg);
+}
+.modal a:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(90deg);
+}
+.modal-open {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    border: 1px solid;
+    background-color: #90abd6;
+    padding: 5px;
+}
+.modal:target ~ .modal-open {
+    display: none;
+}
