@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task {
+    padding: 15px;
+    border: 1px solid;
+    max-width: 300px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 17px 1px;
+}
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+.task-input {
+    margin-bottom: 15px;
+}
+.indexList {
+    display: flex;
+}
+.indexList input {
+    width: 10px;
+    text-align: center;
+}
+.task-two td {
+    width: 57px;
+    height: 30px;
+    text-align: center;
+}

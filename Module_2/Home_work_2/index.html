@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 2</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task task-one">
+            <form class="task-form">
+                <label for="input-1">Введите номер месяца:</label>
+                <input class="task-input" required maxlength="2" type="text" id="input-1">
+                <button class="count">Посчитать</button>
+                <button type="reset">Очистить</button>
+                <p></p>
+            </form>
+        </div>
+        <div class="task task-two">
+            <form class="task-form">
+                <label for="select-1">Выберите единицу измерения:</label>
+                <select id="select-1">
+                    <option value="1">Дециметры</option>
+                    <option value="2">Километры</option>
+                    <option value="3">Метры</option>
+                    <option value="4">Миллиметры</option>
+                    <option value="5">Сантиметры</option>
+                </select>
+                <label for="input-2">Введите число:</label>
+                <input class="task-input" required maxlength="2" type="text" id="input-2">
+                <button class="count">Посчитать</button>
+                <button type="reset">Очистить</button>
+                <p></p>
+            </form>
+        </div>
+        <div class="task task-three">
+            <form class="task-form">
+                <label for="input-3">Введите число:</label>
+                <input class="task-input" required maxlength="4" type="text" id="input-3">
+                <button class="count">Посчитать</button>
+                <button type="reset">Очистить</button>
+                <p></p>
+            </form>
+        </div>
+        <div class="task task-four">
+            <form class="task-form">
+                <p>Откройте консоль</p>
+                <button class="count">Посчитать</button>
+                <button type="reset">Очистить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

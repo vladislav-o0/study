@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 4</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task task-one">
+            <form class="task-form">
+                <p>
+                    Дана строка, изображающая целое число. Вывести сумму цифр этого числа.
+                </p>
+                <input type="text">
+                <button class="count">Суммировать</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>
+        <div class="task task-two">
+            <form class="task-form">
+                <p>
+                    Дана строка и символ. Удвоить каждое вхождение заданного символа в строку.
+                </p>
+                <fieldset>
+                    Введите строку:
+                    <input type="text">
+                </fieldset>
+                <fieldset>
+                    Введите удваеваемый символ:
+                    <input type="text" maxlength="1">
+                </fieldset>
+                <button class="count">Удвоить символ</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>       
+        <div class="task task-three">
+            <form class="task-form">
+                <p>
+                    Проверить что введенный пароль удовлетворяет следующим условиям сложности:
+                </p>    
+                <ol>
+                    <li>- длинна от 9 символов</li>
+                    <li>- содержит обязательно английские буквы верхнего и нижнего регистра</li>
+                    <li>- содержит более двух цифр</li>
+                    <li>- содержит обязательно один из неалфавитных символов (например, !, $, #, %)</li>
+                </ol>   
+                    <input type="text" minlength="9">
+                <button class="count">Проверить пароль</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>        
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
