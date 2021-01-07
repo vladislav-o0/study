@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 6</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task task-one">
+            <form class="task-form">
+                <p>
+                    Реализовать функцию foo:
+                    let a = {
+                    name: 'static',
+                    count: 0
+                    }
+                    console.log(foo(a, 'count', 10)); /* В консоль выведет: [{name:'static', count:0},
+                    {name:'static', count:1}, ..., {name:'static', count:9}] */
+                </p>
+                <button class="count">Вывести</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>
+        <div class="task task-two">
+            <form class="task-form">
+                <p>
+                    Сделайте функцию, каждый вызов который будет генерировать одно случайное число от 1 до 100, но так, чтобы оно не повторялось, пока не будут перебраны все
+                    числа из этого промежутка. Решите задачу через замыкания - в замыкании должен
+                    хранится массив чисел, которые уже были сгенерированы функцией.
+                </p>
+                <button class="count">Вывести случайное число</button>
+                <p class="resultArea"></p>
+                <p>Массив в консоли</p>
+            </form>
+        </div>       
+        <div class="task task-three">
+            <form class="task-form">
+                <p>
+                    Построить объект студент:
+                    - свойства: Имя, Фамилия, Возраст, Интересы (в виде массива), Место обучения.
+                    - метод объекта выводящий в консоль биографическую справку в виде, например:
+                    «Иван Петров. 21 год. Интересы: программирование, музыка, аниме. Учится в ИТМО.
+                </p>    
+                
+                <p>Заполните объект:</p>
+
+                <input type="text"  placeholder="Имя">
+                <input type="text"  placeholder="Фамилия">
+                <input type="text"  placeholder="Возраст">
+                <input type="text"  placeholder="Интересы через запятую">
+                <input type="text"  placeholder="Место учебы">
+
+                <button class="count">Вывести справку</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>        
+        <div class="task task-four">
+            <form class="task-form">
+                <p>
+                    Написать функцию вычисляющую факториал числа с использованием рекурсии.
+                </p>    
+
+                <input type="text"  placeholder="Введите число">
+
+                <button class="count">Посчитать</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>
+        <div class="task task-five">
+            <form class="task-form">
+                <p>
+                    Отсортировать массив по полю 'price' используя метод sort и передаваемую ей функцию,
+                    определяющую порядок сортировки. Массив для тестирования:
+                    let arr = [ { 'price' : 10, 'count' : 2 }, { 'price' : 5, 'count' : 5},
+                    { 'price' : 8, 'count' : 5 }, { 'price' : 12, 'count' : 4 }, { 'price' : 8, 'count' : 4},];
+                </p>    
+
+                <button class="count">Отсортировать</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>           
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
