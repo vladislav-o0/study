@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 8</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task task-one">
+            <p>
+                Даны несколько div элементов на html. По первому нажатию на каждый div он перекрашивается зеленым цветом, при повторном нажатии перекрашивается
+                обратно и так далее каждый клик происходит чередование цвета.
+            </p>
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="task task-two">
+            <form class="task-form">
+                <p>
+                    Реализовать счётчик нажатий на
+                    кнопку: Дана кнопка внутри неё
+                    записана цифра. При клике на
+                    кнопку – её значение должно
+                    увеличиваться на единицу.
+                </p>
+                <button class="count">1</button>
+            </form>
+        </div>
+        <div class="task task-three">
+            <form class="task-form">
+                <p>
+                    Реализовать возможность добавления комментариев.
+                    Комментарий вводится в textarea. Комментарий добавляется по нажатию на кнопку Комментировать.
+                    При добавлении комменария отображаются: аватар автора (пока у всех комментарие одинаковый), имя автора (пока у всех комментарие одинаковое), дата добавления комментария (текущая дата), текст комментария (тот, что был введен в textarea).
+                </p>
+                <textarea class="task-textarea" cols="30" rows="10"></textarea>
+                <button class="count">Комментировать</button>
+            </form>
+            <div class="comments"></div>
+        </div>
+        <div class="task task-four">
+            <form class="task-form">
+                <p>
+                    Дан массив с объектами, где каждый объект описывает книгу: артикул, автор, название, описание. Сформировать функцию, которой передаётся массив книг, и которая создаст и внесёт все необходимые html элементы, стили, и содержание
+                    для отображения всей информации о книгах в видe таблицы.
+                </p>
+                <button class="count">Вывести таблицу</button>
+                <div class="resultArea"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

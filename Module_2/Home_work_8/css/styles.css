@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 10px 0;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task {
+    padding: 15px;
+    border: 1px solid;
+    max-width: 600px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 17px 1px;
+}
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+.task-input {
+    margin-bottom: 15px;
+}
+.boxes {
+    display: flex;
+    flex-flow: row wrap;
+}
+.box {
+    width: 33.33%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid;
+    background-color: pink;
+}
+.box-repaint {
+    background-color: green;
+}
+.comment {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid;
+    align-items: flex-end;
+    margin: 10px auto;
+}
+.comment img {
+    width: 33.33%;
+}
+.comment p {
+    flex-basis: 33.33%;
+}
+.comment p:last-child {
+    flex-basis: 100%;
+}
