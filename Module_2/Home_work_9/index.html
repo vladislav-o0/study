@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 9</title>
+</head>
+<body>
+    <div class="tasks">
+        <div class="task task-one">
+            <p>
+                Написать свою подключаемую js библиотеку для работы с массивом, хранящим целые числа.
+                Библиотека должна обладать следующими методами:
+                - поиск минимального элемента в переданном массиве;
+                - поиск максимально элемента в переданном массиве;
+                - расчет среднего арифметического значения элементов переданного массива;
+                - создание копии (клонирование) переданного массива.
+            </p>
+            <p style="color: royalblue">
+                Откройте консоль
+            </p>
+        </div>
+        <div class="task task-two">
+            <p>
+                Подключить стороннюю библиотеку для построения графиков.
+                Построить график функции y = f(x):
+                y = 5/x, при x>=1;
+                y = x*x – 4*x, при x&lt1.
+                Шаг варьирования x равен 0.01 и интервал варьирования -5 < x < 5.
+                Расчёт функции y = f(x) реализовать в виде отдельной функции.
+            </p>
+            <div id="schedule" style="width: 480px; height: 400px;"></div>
+        </div>
+        <div class="task task-three">
+            <p>
+               Подключить стороннюю библиотеку для юнит тестирования.
+               Написать несколько тестов для функции, рассчитывающей y = 1/x + sqrt(x).
+            </p>
+            <a href="./tests/SpecRunner.html" target="_blank">Открыть вкладку с тестами</a>
+        </div>
+        <div class="task task-four">
+            <p>
+                Написать функцию генерации поля n x n (значение n - аргумент функции), в ячейки рандомно спрятать несколько призов.
+                Пользователю дается 3 попытки найти их - по нажатию на ячейку либо открывается приз
+                (иконка, изменения цвета и тд), либо иконка, сообщающая, что приза нет. Количество оставшихся попыток выводим рядом с игровым полем.
+            </p>
+            <form>
+                <select class="size-area">
+                    <option disabled selected>Выберите размер поля</option>
+                    <option value="2">2x2</option>
+                    <option value="3">3x3</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                </select>
+                <button class="count">Вывести поле</button>
+            </form>
+            <div class="result-area"></div>
+            <p class="life-area"></p>
+        </div>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./js/myLib.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
