@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home work 10</title>
+</head>
+<body>
+    <div class="tasks">
+
+        <div class="task task-one">
+            <form class="task-form">
+                <p>
+                    Используя прототипы:
+                    Создать шаблон объектов «Товар».
+                    Свойства товара «Имя» и «Цена».
+                    Создать шаблон объектов «Корзина товаров».
+                    Свойства объекта:
+                    - Массив товаров;
+                    - Количество товаров;
+                    - Сумма товаров.
+                    Методы объекта:
+                    - Добавить товар;
+                    - Вернуть сумму товара;
+                    - Вернуть количество товара.
+                </p>
+                <fieldset>
+                    <legend>Товар</legend>
+                    <input type="text" name="name" placeholder="Название">
+                    <input type="text" name="price" placeholder="Цена">
+                </fieldset>
+                <button class="count">Создать товар и добавить в корзину</button>
+                <p class="resultArea"></p>
+            </form>
+        </div>
+
+        <div class="task task-two">
+            <form class="task-form">
+                <p>
+                    Используя смешанное наследование:
+                    Создать шаблон объектов «Человек».
+                    Свойства «Имя», «Возраст», «Пол», «Интересы».
+                    Метод преобразования к строке вида: «Человек: Иван. Возраст: 25 лет. Пол: м. Интересы:
+                    музыка, программирование.»
+                    Создать шаблон объектов «Студент».
+                    Свойства от наследованные от шаблона объектов
+                    «Человек» и добавить «Институт».
+                    Переопределить метод преобразования к строке вида:
+                    «Студент: Иван. Возраст: 25 лет. Пол: м. Интересы: музыка, программирование. Обучается в ИТМО.»
+                </p>
+                <fieldset name="man">
+                    <legend>Человек</legend>
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="age" placeholder="Возраст">
+                    <span>Пол:</span>
+                    <label><input type="radio" name="gender_man" value="Мужчина">M</label>
+                    <label><input type="radio" name="gender_man" value="Женщина">Ж</label>
+                    <input type="text" name="interests" placeholder="Интересы">
+                </fieldset>
+                <button class="count add-man">Добавить человека</button>
+                <fieldset name="student">
+                    <legend>Студент</legend>
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="age" placeholder="Возраст">
+                    <span>Пол:</span>
+                    <label><input type="radio" name="gender_student" value="Мужчина">M</label>
+                    <label><input type="radio" name="gender_student" value="Женщина">Ж</label>
+                    <input type="text" name="interests" placeholder="Интересы">
+                    <input type="text" name="study" placeholder="Место обучения">
+                </fieldset>
+                <button class="count add-student">Добавить студента</button>
+                <ul class="resultArea"></ul>
+            </form>
+        </div>
+    
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
