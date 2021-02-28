@@ -35,7 +35,7 @@ img {
     display: block;
     position: absolute;
     bottom: 0;
-    animation: bottom-glow 1s 0.9s forwards;
+    animation: bottom-glow 1s 0.9s;
 }
 
 .task-list {
@@ -58,6 +58,10 @@ img {
 }
 .two .task-link:hover {
     color: #b12525;
+}
+.two .task-item {
+    font-size: 32px;
+    padding: 11px;
 }
 
 
