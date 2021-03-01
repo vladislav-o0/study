@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <div id="app">
+        <div v-if="!edit" class="hint">Для редактирования кликните на текст статьи</div>
+        <div v-else class="hint">Для сохранения кликните в любую другую область</div>
+        <div v-for="post in posts" :key="post.id">
+            <h3>{{post.name}}</h3>
+            <p v-show="edit != post.id" @click="startEdit(post.id)">{{post.text}}</p>
+            <textarea v-show="edit == post.id"  @blur="endEdit(post.id)" v-model="post.text" class="editText"></textarea>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -26,6 +26,9 @@ img {
 .two {
     background-color: #F8DC3D;
 }
+.three {
+    background-color: #00c07f;
+}
 .drop {
     animation: drop 1s ease forwards;
 }
@@ -43,12 +46,21 @@ img {
     opacity: 0;
     font-size: 42px;
     transition: opacity 300ms;
+    color: #1e1e1e;
+}
+.task-sublist {
+    display: none;
+    text-align: center;
+    border-left: 6px dotted white;
+    padding-left: 16px;
 }
 .task-item {
     padding: 15px;
     font-family: 'Russo One', sans-serif;
 }
-
+.task-item:hover .task-sublist {
+    display: block;
+}
 .task-link {
     text-decoration: none;
     color: #1e1e1e;
@@ -63,6 +75,10 @@ img {
     font-size: 32px;
     padding: 11px;
 }
+.three .task-link:hover {
+    color: #4f5e70;
+}
+
 
 
 @keyframes drop {

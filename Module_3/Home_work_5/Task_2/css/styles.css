@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #e6e65f;
+}
+.slider {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: cursive;
+}
+
+.slide {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.disappearance {
+    opacity: 1;
+}

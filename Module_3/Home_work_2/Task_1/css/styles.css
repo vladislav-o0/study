@@ -1,0 +1,12 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgoldenrodyellow;
+}
+body {
+    padding: 0 150px;
+}
+
+.toggle {
+    color: blue;
+    cursor: pointer;
+}

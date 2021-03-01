@@ -1,0 +1,66 @@
+#app {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+}
+.grid {
+    flex-flow: row wrap;
+}
+.column {
+    flex-flow: column wrap;
+
+}
+
+.container img {
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.grid .article {
+    flex-basis: 50%;
+    flex-flow: column wrap;
+}
+
+.grid .article-img {
+    object-fit: cover;
+    height: 100%;
+    
+}
+.grid .img-link {
+    flex-grow: 1;
+}
+
+.column .article-title {
+    width: 50%;
+    padding-right: 15px;
+}
+.column .article-img {
+    object-fit: cover;
+}
+.column .img-link {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.mode-container {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+}
+
+.mode-container button {
+    width: 100px;
+}

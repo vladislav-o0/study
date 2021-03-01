@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Task 3</title>
+</head>
+<body>
+    <div id="app">
+        <div class="gallery">
+            <div class="galleryAddImg">
+                <p class="error" v-if="error">Заполните все поля!</p>
+                <input type="text" v-model="newItem.name" placeholder="Название">
+                <input type="text" v-model="newItem.img" placeholder="Путь к изображению">
+                <button @click="addItem" class="btn">Добавить</button>
+            </div>
+            <gallery-card v-for="(item, i) in items" :index="i" :name="item.name" :img="item.img" @delete-card="deleteItem"></gallery-card>
+            <p class="empty" v-if="!items.length">Галерея пуста</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+</html>

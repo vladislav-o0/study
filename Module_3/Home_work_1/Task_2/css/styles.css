@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#app {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    background-color: rgb(130, 130, 255);
+    display: flex;
+    padding-right: 10px;
+    box-shadow: 1px 1px 10px 0px;
+}
+.profile p {
+    margin: 0;
+}
+
+.avatar {
+    width: 150px;
+    display: block;
+}
+
+.profile-ava {
+    margin-right: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
